@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Zapatillas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
   <link href="css/estilos.css" type="text/css" rel="stylesheet"> 
+  <link rel="shortcut icon" href="img/zikretillaslogo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
 
@@ -36,7 +38,7 @@
                 <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lanzamientos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Foro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">Quienes Somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesión</a></li>
                 </ul>
             </div>
@@ -49,7 +51,7 @@
     <!-- Se llama al elemento unico llamado carrusel, el carrusel slide genera el slide, el ride data recibe el nombre -->
     <div id="carousel1" class="carousel slide" data-ride="carousel" >
       <!-- Lista ordenada ya que cada foto ocupa una ocupación, el indicators es porque siempre debe empezar con alguna foro-->
-      <ol class="carousel-indicators">
+      <ol class="carousel-indicators py-4">
         <!-- Se le da el orden a cada foto, el active es el que hace que inicie el carrusel -->
         <li data-target="#carousel1" data-slide-to="0" class="active"></li>
         <li data-target="#carousel1" data-slide-to="1"></li>
@@ -63,29 +65,17 @@
       <div class="carousel-inner" >
         <div class="carousel-item active">
           <!-- Se espicifica la foto, que es en bloque, el ancho y la ruta -->
-          <img class="d-block w-100" src="img/Nike.jpg" alt="">
+          <img class="d-block w-100" src="img/Jordan.jpg" alt="">
           <!-- Texto en la imágen -->
-            <div class="carousel-caption">
-              <h3>Nike</h3>
-            </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="img/Adidas.jpg" alt="">
-            <div class="carousel-caption">
-              <h3>Adidas</h3>
-            </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/Jordan.jpg" alt="">
-            <div class="carousel-caption">
-              <h3>Jordan</h3>
-            </div>
+            <img class="d-block w-100" src="img/Nike.jpg" alt="">
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="img/Yeezy.jpg" alt="">
-          <div class="carousel-caption">
-            <h3>Yeezy</h3>
-          </div>
       </div>
       </div>
       <!-- botones de desplazamiento a izquierda y derecha -->      
@@ -99,9 +89,210 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    
+    <!--================= RIBBON =================-->
+    <div id="ribbon" class="container-fluid">
+      <div id="tarjeta" class="container w-50 pl-5 rounded">
+        <div class="row align-items-center">
+          <div class="col-sm p-2">
+            <img src="img/j1chicago.png" class="w-75 mx-auto d-block">
+          </div>
+          <div class="col-sm p-3 text-center">
+            <h4>Las Nike Air Jordan 1</h4>
+            <p>Se pusieron a la venta en el año 1985 </p> 
+          </div>      
+        </div>
+      </div>
+    </div>
+
+
     <br>
     <br>
     <br>
+    <br>
+
+    
+    
+    <!--================= Marcas con poco hype / Card hover =================-->
+    <section id="facilities">
+      <h1 class="text-center">MARCAS CON POCO HYPE</h4>
+        <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/nb.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">New Balance</h5>
+                <p class="card-text">Las zapatillas New Balance son hoy objeto de deseo de sneakerheads, techies y fashionistas. 
+                  Sin embargo, su historia es más costumbrista de los que imaginamos. 
+                  Todo porque un hombre descubrió cómo hacer más cómodas unas zapatillas observando a los pollos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/pumars.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">Puma</h5>
+                <p class="card-text">La marca Puma se introduce sigilosamente dentro del mercado de bienes de consumo y 
+                  moda a partir de la década de los 90. El truco estaba en generar zapatos de deporte, sí, 
+                  pero también zapatos de divertimento e incluso lujo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/vansold.jpg" class="card-img-top" height="245">
+              <div class="card-body">
+                <h5 class="card-title">Vans</h5>
+                <p class="card-text">Vans es una compañía dedicada principalmente a la producción de calzados, también fabrica ropa, 
+                  como sudaderas y camisetas. Su principal mercado está en el skateboarding, además de otros deportes urbanos y 
+                  también extremos.</p>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- ZAPATILLAS MAS VENDIDAS -->
+    <section id="facilities">
+      <h1 class="text-center">ZAPATILLAS MAS VENDIDAS</h4>
+        <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/logo.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
+                <p class="card-text">$39.990</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/logo.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
+                <p class="card-text">$39.990</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/logo.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
+                <p class="card-text">$39.990</p>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <!--================= MEJOR VALORADAS =================-->
+    <section id="facilities">
+      <h1 class="text-center">ZAPATILLAS MEJOR VALORADAS</h4>
+        <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/logo.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
+                <p class="card-text">$39.990</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/logo.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
+                <p class="card-text">$39.990</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card text-center cardborder">
+              <img src="img/logo.jpg" class="card-img-top" height="245px">
+              <div class="card-body">
+                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
+                <p class="card-text">$39.990</p>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-dark py-4">
+      <div class="container">
+          <nav class="row">
+              <!-- Logo -->
+              <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+                  <img src="img/zikretillaslogo.png" alt="Logo Zapatillas" class="rounded-circle mr-2" width="50px">
+                  
+              </a> 
+              <!-- Menú -->
+              <ul class="col-3 list-unstyled">
+                  <li class="font-weight-bold text-uppercase">Resource</li>
+                  <li><a href="#" class="text-reset">Link 1</a></li>
+                  <li><a href="#" class="text-reset">Link 2</a></li>
+                  <li><a href="#" class="text-reset">Link 3</a></li>
+              </ul>
+              <!-- Menú 2 -->
+              <ul class="col-3 list-unstyled">
+                  <li class="font-weight-bold text-uppercase">Quick Links</li>
+                  <li><a href="#" class="text-reset">Link 1</a></li>
+                  <li><a href="#" class="text-reset">Link 2</a></li>
+                  <li><a href="#" class="text-reset">Link 3</a></li>
+              </ul>
+              <!-- Social network -->
+              <ul class="col-3 list-unstyled">
+                  <li class="font-weight-bold text-uppercase">Redes sociales</li>
+                  <li class="d-flex justify-content-between py-4">
+                      <!-- FB -->
+                      <a href="#" class="text-reset">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <!-- TW -->
+                      <a href="#" class="text-reset">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                      <!-- IG -->
+                      <a href="#" class="text-reset">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                      <!-- YT -->
+                      <a href="#" class="text-reset">
+                          <i class="fab fa-youtube"></i>
+                      </a>
+                  </li>
+                  
+              </ul>
+          </nav>
+      </div> 
+  </footer>
+    
+    
+
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
