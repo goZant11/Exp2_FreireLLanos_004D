@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zapatillas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
@@ -36,8 +35,8 @@
             <div class="collapse navbar-collapse" id="mainNav">
                 <!-- Margin left auto lo mueve a la derecha -->
                 <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Lanzamientos</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Lanzamientos.html">Lanzamientos</a></li>
                     <li class="nav-item"><a class="nav-link" href="AboutUs.html">Quienes Somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesión</a></li>
                 </ul>
@@ -92,14 +91,14 @@
     
     <!--================= RIBBON =================-->
     <div id="ribbon" class="container-fluid">
-      <div id="tarjeta" class="container w-50 pl-5 rounded">
+      <div id="tarjeta" class="container w-75 pl-5 rounded">
         <div class="row align-items-center">
           <div class="col-sm p-2">
             <img src="img/j1chicago.png" class="w-75 mx-auto d-block">
           </div>
-          <div class="col-sm p-3 text-center">
-            <h4>Las Nike Air Jordan 1</h4>
-            <p>Se pusieron a la venta en el año 1985 </p> 
+          <div class="col-sm text-center">
+            <h4 class="titulo-ribbon">Las Nike Air Jordan 1</h4>
+            <p class="parrafo-ribbon">Se pusieron a la venta en el año 1985, y son las zapatillas favoritas de Michael Jordan.</p> 
           </div>      
         </div>
       </div>
@@ -111,29 +110,91 @@
     <br>
     <br>
 
+    <!--================= NOTICIA =================-->
     
-    
+    <div class="container" id="infoscroll">
+      <div class="slideshow-new" >
+          <div class="slideshow-item-new">
+              <img class="zoom-img" src="img/bdbunny2.png" >
+              <div class="slideshow-item-text-new ">
+                  <h5>BAD BUNNY ANUNCIA SU ZAPATILLA [BAD BUNNY X ADIDAS FORUM LOW] </h5>
+                  <p> El famoso cantante Bad Bunny anuncia que sacará su zapatilla de la mano de la reconocida marca de Adidas,
+                    siendo esto uno de los lanzamientos más esperados del momento, el cantante ya ha mostrado como serán en sus
+                    redes sociales y ha sorprendido con el diseño de estas.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--================= Marcas MÁS HYPEADAS / Card hover =================-->
+    <h1 class="text-center titulo">MARCAS MÁS HYPEADAS</h4>
+      <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card text-center cardborder">
+            <img src="img/newbalance.jpg" class="card-img-top" height="245px">
+            <div class="card-body">
+              <h5 class="card-title">New Balance</h5>
+              <p class="card-text">Las zapatillas New Balance son hoy objeto de deseo de sneakerheads, techies y fashionistas. 
+                Sin embargo, su historia es más costumbrista de los que imaginamos. 
+                Todo porque un hombre descubrió cómo hacer más cómodas unas zapatillas observando a los pollos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card text-center cardborder">
+            <img src="img/ADIDASLOGO.png" class="card-img-top" height="245px">
+            <div class="card-body">
+              <h5 class="card-title">Adidas</h5>
+              <p class="card-text">Adidas se fundó con el deseo de ayudar a mejorar el rendimiento de los deportistas. 
+                Setenta años después, adidas no solo ha dejado huella en el deporte y en los atletas, sino también en la moda, 
+                la cultura, la sostenibilidad y en muchos otros ámbitos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card text-center cardborder">
+            <img src="img/NIKELOGO.png" class="card-img-top" height="245">
+            <div class="card-body">
+              <h5 class="card-title">Nike</h5>
+              <p class="card-text" style="margin-bottom: 23px;"> Bill Bowerman quiso innovar el calzado de los atletas. Con la ayuda de Phil Knight empezó 
+                a relacionarse con marcas de Japón para poder hacerlo, y así crear una de las marcas de zapatillas más conocida mundialmente</p>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <br><br><hr><br><br>
+
     <!--================= Marcas con poco hype / Card hover =================-->
-    <section id="facilities">
-      <h1 class="text-center">MARCAS CON POCO HYPE</h4>
+    <!-- <section id="facilities"> -->
+      <h1 class="text-center titulo">MARCAS POCO HYPEADAS</h4>
         <br>
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
             <div class="card text-center cardborder">
-              <img src="img/nb.jpg" class="card-img-top" height="245px">
+              <img src="img/CONVERSELOGO.png" class="card-img-top" height="245px">
               <div class="card-body">
-                <h5 class="card-title">New Balance</h5>
-                <p class="card-text">Las zapatillas New Balance son hoy objeto de deseo de sneakerheads, techies y fashionistas. 
-                  Sin embargo, su historia es más costumbrista de los que imaginamos. 
-                  Todo porque un hombre descubrió cómo hacer más cómodas unas zapatillas observando a los pollos.</p>
+                <h5 class="card-title">Converse</h5>
+                <p class="card-text" style="margin-bottom: 25px;">la compañía creo las primeras zapatillas llamadas All Star compuestas únicamente por goma y lienzo. 
+                  En su concepción fue diseñada para ser un calzado de élite de la liga profesional de baloncesto.</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="card text-center cardborder">
-              <img src="img/pumars.jpg" class="card-img-top" height="245px">
+              <img src="img/puma.png" class="card-img-top" height="245px">
               <div class="card-body">
                 <h5 class="card-title">Puma</h5>
                 <p class="card-text">La marca Puma se introduce sigilosamente dentro del mercado de bienes de consumo y 
@@ -145,7 +206,7 @@
 
           <div class="col-lg-4">
             <div class="card text-center cardborder">
-              <img src="img/vansold.jpg" class="card-img-top" height="245">
+              <img src="img/vans.jpg" class="card-img-top" height="245">
               <div class="card-body">
                 <h5 class="card-title">Vans</h5>
                 <p class="card-text">Vans es una compañía dedicada principalmente a la producción de calzados, también fabrica ropa, 
@@ -158,14 +219,11 @@
       </div>
     </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><hr><br><br>
 
-    <!-- ZAPATILLAS MAS VENDIDAS -->
-    <section id="facilities">
-      <h1 class="text-center">ZAPATILLAS MAS VENDIDAS</h4>
+    <!-- ZAPATILLAS MEJOR VALORADAS -->
+    <!-- <section id="facilities">
+      <h1 class="text-center">ZAPATILLAS MÁS VENDIDAS</h4>
         <br>
       <div class="container">
         <div class="row">
@@ -200,46 +258,233 @@
           </div>
         </div>        
       </div>
-    </section>
+    </section> -->
 
-    <!--================= MEJOR VALORADAS =================-->
-    <section id="facilities">
-      <h1 class="text-center">ZAPATILLAS MEJOR VALORADAS</h4>
-        <br>
-      <div class="container">
+    <!-- https://www.youtube.com/watch?v=q9vosdXMgoI&t=18s -->
+    <h1 class="text-center titulo">ZAPATILLAS MEJOR VALORADAS</h4>
+    <div class="container mb-5 mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mt-3 cardborder2">
+            <div class="product-1 align-items-center p-2 text-center">
+              <img src="img/PUMAVELOCITYNITRO.jpg" class="rounded" width="160">
+              <h5 class="titulo-tarjeta">PUMA VELOCITY NITRO</h5>
+              <!-- <div class="mt-3 info">
+                <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+              </div> -->
+              <div class="cost mt-3 text-dark">
+                <span>$80.00</span>
+                <div class="star mt-3 align-items-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 shoe text-center text-white mt-3 cursor">
+              <span class="text-uppercase">Leer más</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mt-3 cardborder2">
+            <div class="product-1 align-items-center p-2 text-center">
+              <img src="img/NIKEREACTINFINITYRUN.png" class="rounded" width="180">
+              <h5>NIKE REACT INFINITY RUN</h5>
+              <!-- <div class="mt-3 info">
+                <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+              </div> -->
+              <div class="cost mt-3 text-dark">
+                <span>$90.00</span>
+                <div class="star mt-3 align-items-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+
+                </div>
+              </div>
+            </div>
+            <div class="p-3 shoe text-center text-white mt-3 cursor">
+              <span class="text-uppercase">Leer más</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card mt-3 cardborder2">
+            <div class="product-1 align-items-center p-2 text-center">
+              <img src="img/NIKEAIRMAXPLUS.png" class="rounded" width="155">
+              <h5>NIKE AIR MAX PLUS</h5>
+              <!-- <div class="mt-3 info">
+                <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+              </div> -->
+              <div class="cost mt-3 text-dark">
+                <span>$110.00</span>
+                <div class="star mt-3 align-items-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+
+                </div>
+              </div>
+            </div>
+            <div class="p-3 shoe text-center text-white mt-3 cursor">
+              <span class="text-uppercase">Leer más</span>
+            </div>
+          </div>
+        </div>      
+    </div>
+
+    <br><br><hr><br><br>
+
+    <!-- ZAPATILLAS MÁS HYPEADAS -->
+
+    <h1 class="text-center titulo">ZAPATILLAS MÁS HYPEADAS</h4>
+      <div class="container mb-5 mt-5">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="card text-center cardborder">
-              <img src="img/logo.jpg" class="card-img-top" height="245px">
-              <div class="card-body">
-                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
-                <p class="card-text">$39.990</p>
+          <div class="col-md-4">
+            <div class="card mt-3 cardborder2">
+              <div class="product-1 align-items-center p-2 text-center">
+                <img src="img/SOUTHPARKXADIDAS.png" class="rounded" width="193">
+                <h5>SOUTH PARK X ADIDAS</h5>
+                <!-- <div class="mt-3 info">
+                  <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+                </div> -->
+                <div class="cost mt-3 text-dark">
+                  <span>$160.00</span>
+                  <div class="fire mt-3 align-items-center">
+                    <i class="fas fa-fire"> 32.789 Hypes</i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 shoefire text-center text-white mt-3 cursor">
+                <span class="text-uppercase">Leer más</span>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4">
-            <div class="card text-center cardborder">
-              <img src="img/logo.jpg" class="card-img-top" height="245px">
-              <div class="card-body">
-                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
-                <p class="card-text">$39.990</p>
+  
+          <div class="col-md-4">
+            <div class="card mt-3 cardborder2">
+              <div class="product-1 align-items-center p-2 text-center">
+                <img src="img/JORDANTOROBRAVO.png" class="rounded" width="200">
+                <h5>AIR JORDAN 5 "TORO BRAVO"</h5>
+                <!-- <div class="mt-3 info">
+                  <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+                </div> -->
+                <div class="cost mt-3 text-dark">
+                  <span>$110.00</span>
+                  <div class="fire mt-3 align-items-center">
+                    <i class="fas fa-fire"> 17.553 Hypes</i> 
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 shoefire text-center text-white mt-3 cursor">
+                <span class="text-uppercase">Leer más</span>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4">
-            <div class="card text-center cardborder">
-              <img src="img/logo.jpg" class="card-img-top" height="245px">
-              <div class="card-body">
-                <h5 class="card-title">Zapatillas EnergyFalcon</h5>
-                <p class="card-text">$39.990</p>
+          
+          <div class="col-md-4">
+            <div class="card mt-3 cardborder2">
+              <div class="product-1 align-items-center p-2 text-center">
+                <img src="img/NikeLebron8HWC.png" class="rounded" width="180">
+                <h5>Nike Lebron 8 "HWC"</h5>
+                <!-- <div class="mt-3 info">
+                  <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+                </div> -->
+                <div class="cost mt-3 text-dark">
+                  <span>$130.00</span>
+                  <div class="fire mt-3 align-items-center">
+                    <i class="fas fa-fire"> 19.953 Hypes</i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 shoefire text-center text-white mt-3 cursor">
+                <span class="text-uppercase">Leer más</span>
               </div>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
-    </section>
+
+    <br><br><hr><br><br>
+  
+      <!-- PRÓXIMOS LANZAMIENTOS -->  
+      <h1 class="text-center titulo">LANZAMIENTOS MÁS ESPERADOS</h4>
+        <div class="container mb-5 mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mt-3 cardborder2">
+                <div class="product-1 align-items-center p-2 text-center">
+                  <img src="img/bdbunny.png" class="rounded" width="160">
+                  <h5>BAD BUNNY X ADIDAS FORUM LOW </h5>
+                  <!-- <div class="mt-3 info">
+                    <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+                  </div> -->
+                  <div class="cost mt-3 text-dark">
+                    <span>$160.00</span>
+                    <div class="clock mt-3 align-items-center">
+                      <i class="far fa-clock"> 10/04/2021</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3 shoeprox text-center text-white mt-3 cursor">
+                  <span class="text-uppercase">NO DISPONIBLE</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mt-3 cardborder2">
+                <div class="product-1 align-items-center p-2 text-center">
+                  <img src="img/ADIDASYEEZYBOOST700.png" class="rounded" width="155">
+                  <h5>ADIDAS YEEZY BOOST 700 “BRIGHT BLUE”</h5>
+                  <!-- <div class="mt-3 info">
+                    <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+                  </div> -->
+                  <div class="cost mt-3 text-dark">
+                    <span>$240.00</span>
+                    <div class="clock mt-3 align-items-center">
+                      <i class="far fa-clock"> 17/04/2021</i> 
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3 shoeprox text-center text-white mt-3 cursor">
+                  <span class="text-uppercase">NO DISPONIBLE</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card mt-3 cardborder2">
+                <div class="product-1 align-items-center p-2 text-center">
+                  <img src="img/SEANWOTHERSPOONXADIDAS.jpg" class="rounded" width="160">
+                  <h5 style="font-size: 18px;">SEAN WOTHERSPOON X ADIDAS ZX 8000
+                    “SUPEREARTH”</h5>
+                  <!-- <div class="mt-3 info">
+                    <span class="text1 d-block">Lorem ipsum dolor sit amet</span>
+                  </div> -->
+                  <div class="cost mt-3 text-dark">
+                    <span>$140.00</span>
+                    <div class="clock mt-3 align-items-center">
+                      <i class="far fa-clock"> 16/04/2021</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3 shoeprox text-center text-white mt-3 cursor">
+                  <span class="text-uppercase">NO DISPONIBLE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
     <!-- Footer -->
     <footer class="bg-white text-dark py-4">
