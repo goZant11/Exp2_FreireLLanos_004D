@@ -1,13 +1,60 @@
-.titulo{
-    text-align: center;
+
+/*================= Estilos generales =================*/
+
+/* html, body{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+} */
+
+
+/*================= Estilos generales =================*/
+/* Todos los anclas heredaran el color de su padre */
+/* a {
+    color: inherit;
+} */
+
+
+/*================= Nav =================*/
+
+.navbar {
+    text-transform: uppercase;
+    box-shadow: 0 .1rem .1rem rgb(162, 164, 167);
 }
 
-.cardborder{
-    border:solid 10px white;
-    border-radius: 37px;
-    overflow: hidden;
-    transition: all ease-out 0.25s;
+/* El hijo de navbar brand que es una imagen se le de ese tamaño */
+.navbar-brand img{
+    width: 40px;
 }
-.cardborder:hover{
-    transform: scale(1.05);
+
+/* Todos los elementos que tengan la clase active dentro de la clase navbar main tendrar eso */
+.navbar-main .active{
+    /* una linea debajo con forma de wave y morada */
+    text-decoration: underline wavy #800080;
+    text-underline-offset: 9px;
 }
+
+
+
+/*================= Carrusel =================*/
+
+/* Cortar la imagen */
+/* .carousel-inner {
+    max-height: 40rem!important;
+}  */
+
+/* Cambiar la velocidad de transición */
+/* .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transition: transform 1.2s ease;
+} */
+
+/* Cambiar tamaño de botones */
+.carousel-indicators li {
+    width: 40px;
+    height: 6px;
+    margin: 5px;
+    margin-right: 4px;
+    margin-left: 4px;
+} 
+
