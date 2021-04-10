@@ -1,0 +1,13 @@
+.titulo{
+    text-align: center;
+}
+
+.cardborder{
+    border:solid 10px white;
+    border-radius: 37px;
+    overflow: hidden;
+    transition: all ease-out 0.25s;
+}
+.cardborder:hover{
+    transform: scale(1.05);
+}
