@@ -16,15 +16,14 @@
 
 .navbar {
     text-transform: uppercase;
-    box-shadow: 0 .1rem .1rem rgb(162, 164, 167);
+    box-shadow: 0 1.6px 1.6px rgb(162, 164, 167);
 }
 
-/* El hijo de navbar brand que es una imagen se le de ese tamaño */
 .navbar-brand img{
-    width: 40px;
+    width: 60px;
+    height: 60px;
 }
 
-/* Todos los elementos que tengan la clase active dentro de la clase navbar main tendrar eso */
 .navbar-main .active{
     text-decoration: underline wavy #800080;
     text-underline-offset: 9px;
@@ -40,8 +39,6 @@
 
 /*================= INICIO CARRUSEL =================*/
 
-
-/* Cambiar tamaño de botones */
 .carousel-indicators li {
     width: 40px;
     height: 6px;
@@ -102,20 +99,20 @@
 
 /*================= INICIO NOTICIAS =================*/
 
-.slideshow-new{
+.noticia{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-.slideshow-item-new{
+.noticia-item{
     width: inherit;
     height: inherit;    
 }
 
 
-.slideshow-item-new img{
+.noticia-item img{
     width: 100%;
     height: 97.5%;
     object-fit: cover;
@@ -125,7 +122,7 @@
     transition: transform .2s; /* Animation */
 }
 
-.slideshow-item-text-new{ 
+.noticia-item-text{ 
     max-width: 100%;
     padding: 2rem;
     top: initial;
@@ -139,15 +136,15 @@
 }
 
 
-.slideshow-item-text-new h5{
+.noticia-item-text h5{
     font-size: 23px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 1 rem;
+    margin-bottom: 16px;
 }
 
 
-.slideshow-item-text-new p{
+.noticia-item-text p{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     
@@ -157,6 +154,38 @@
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 2000px){
+    .noticia-item-text p{
+        font-size: 25px;
+    }
+    .noticia-item-text h5{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+}
+
+@media screen and (max-width: 450px){
+    .noticia-item-text p{
+        font-size: 15px;
+    }
+    .noticia-item-text h5{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .noticia-item-text p{
+        font-size: 12px;
+    }
+    .noticia-item-text h5{
+        font-size: 18px;
+    }
+}
+
+
 
 /*================= FIN NOTICIAS =================*/
 
@@ -164,18 +193,15 @@
 /*================= INICIO TARJETAS HYPE =================*/
 
 
-/* Color de fondo */
 #facilities{
     background-color: #f8f8f8;
     padding: 30px 0px;
 }
 
-/* Sombras del body */
 .card-body {
     box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
 }
 
-/* Margen de cartas */
 .card {
     margin: 20px 10px;
 }
@@ -193,12 +219,19 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+@media screen and (max-width: 2000px){
+    .card-text{
+        font-size: 20px;
+    }
+    .card-title{
+        font-size: 25px;
+    }
+}
 
 /*================= FIN TARJETAS HYPE =================*/
 
 
 /*================= INICIO SECCIÓN ZAPATILLAS =================*/
-/* https://www.youtube.com/watch?v=q9vosdXMgoI&t=18s */
 
 .cardborder2{
     border: none;
@@ -250,6 +283,7 @@
 .fire{
     color: #ff0000;
 }
+
 
 .shoefire{
     background: #ff0000;
@@ -329,10 +363,46 @@
     font-family: sans-serif;
 }
 
+@media screen and (max-width: 2000px){
+    .banner-p-lanzamiento{
+        font-size: 26px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .banner-p-lanzamiento{
+        font-size: 15px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .banner-p-lanzamiento{
+        font-size: 15px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .banner-p-lanzamiento{
+        font-size: 18px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 26px;
+    }
+}
+
+
 /*================= FIN BACKGROUND =================*/
 
 /*================= INICIO GALERIA =================*/
-/* https://www.youtube.com/watch?v=Ff8Acay5oXI */
 .contenedor-imagenes{
     display: flex;
     width: 85%;
@@ -427,6 +497,20 @@
     
 }
 
+@media screen and (max-width: 600px){
+    .contenedor-imagenes .imagen .overlay span{
+        margin-top: 40px;    
+        font-size: 23px;
+    }
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+    
+}
+
 @media screen and (max-width: 450px){
     h1{
         font-size: 22px;
@@ -487,7 +571,7 @@
 }
 
 .banner-info{
-    padding: 0.3em;
+    padding: 4.8px;
     position: absolute;
     width: 100%;
     max-width: 700px;
@@ -508,90 +592,69 @@
     font-family: sans-serif;
 }
 
+@media screen and (max-width: 1200px){
+    .banner-p{
+        font-size: 25px;
+    }
+    .btn-size{
+        font-size: 20px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .banner-p{
+        font-size: 23px;
+    }
+    .banner-title{
+       font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .banner-p{
+        font-size: 18px;
+    }
+    .banner-title{
+       font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .banner-p{
+        font-size: 15px;
+    }
+    .banner-title{
+       font-size: 25px;
+    }
+}
+
 /*================= FIN BACKGROUND =================*/
 
 
 /*================= INICIO SOBRE NOSOTROS =================*/
 
-/* .about-section{
-    background: url(../img/modelozapatilla.jpg);
-    background-size: cover;
-    background-color: #fdfdfd;
-    overflow-x: hidden;
-    padding: 100px 0;
-}
-
-.inner-container{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 150px;
-}
-
-.inner-container h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.text{
-    font-size: 13px;
-    color: black;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
-
-.redes{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-}
-
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: auto;
-        padding: 100px-40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .inner-container{
-        width: 100%;
-    }
-} */
-
-
-/* https://www.youtube.com/watch?v=FWQir0ZfAJI */
-.slideshow{
+.about-us{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-.slideshow-item{
+.about-us-item{
     width: inherit;
     height: inherit;    
 }
 
 
-.slideshow-item img{
+.about-us-item img{
     width: 100%;
     height: 97.5%;
     object-fit: cover;
     
 }
 
-/*  */
-.slideshow-item-text{ 
+.about-us-item-text{ 
     max-width: 50%;
     position: absolute;
     top: 50%;
@@ -599,85 +662,117 @@
     transform: translateY(-50%);
     background-color: rgb(0, 0, 0, .6);
     color: #fff;
-    padding: 10rem 5rem;
+    padding: 160px 80px;
 }
 
-/*  */
-.slideshow-item-text h5{
+.about-us-item-text h5{
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
     text-align:center;
 }
 
-/*  */
-.slideshow-item-text p{
+.about-us-item-text p{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     
 }
 
-/* Responsive */
-
-@media screen and (max-width:1000px){
-    .slideshow-item-text{
-        max-width: 70%;
-        padding: 10rem 5rem;
+@media screen and (max-width:1200px){
+    .about-us-item-text{
+        max-width: 75%;
+        padding: 160px 80px;
     }
 
-    .slideshow-item-text h5{
-        font-size: 4rem;
+    .about-us-item-text h5{
+        font-size: 40px;
+    }
+
+    .about-us-item-text p{
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        font-size: 30px;
     }
 }
 
 
-@media screen and (max-width: 767px){
-    .slideshow-item-text{
+@media screen and (max-width: 800px){
+    .about-us-item-text{
         max-width: 100%;
-        padding: 2rem;
+        padding: 32px;
         top: initial;
         bottom: 18px;
         transform: initial;
     }
 
-    .slideshow-item-text h5{
-        font-size: 23px;
+    .about-us-item-text h5{
+        font-size: 30px;
     }
 
-    .slideshow-item-text p{
+    .about-us-item-text p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-us-item-text h5{
+        font-size: 20px;
+    }
+
+    .about-us-item-text p{
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 400px){
+    .about-us-item-text h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .about-us-item-text h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text p{
+        font-size: 13px;
+    }
+}
+
 
 /*================= FIN SOBRE NOSOTROS =================*/
 
 
 /*================= INICIO VISIÓN =================*/
 
-.slideshow-2{
+.about-us-2{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-.slideshow-item-2{
+.about-us-item-2{
     width: inherit;
     height: inherit;    
 }
 
 
-.slideshow-item-2 img{
+.about-us-item-2 img{
     width: 100%;
     height: 97.5%;
     object-fit: cover;
     
 }
 
-/*  */
-.slideshow-item-text-2{ 
+.about-us-item-text-2{ 
     max-width: 50%;
     position: absolute;
     top: 50%;
@@ -685,55 +780,86 @@
     transform: translateY(-50%);
     background-color: rgb(0, 0, 0, .6);
     color: #fff;
-    padding: 10rem 5rem;
+    padding: 160px 80px;
 }
 
-/*  */
-.slideshow-item-text-2 h5{
+.about-us-item-text-2 h5{
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
     text-align:center;
 }
 
-/*  */
-.slideshow-item-text-2 p{
+.about-us-item-text-2 p{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     
 }
 
-/* Responsive */
-
-@media screen and (max-width:1000px){
-    .slideshow-item-text-2{
-        max-width: 70%;
-        padding: 10rem 5rem;
+@media screen and (max-width:1200px){
+    .about-us-item-text-2{
+        max-width: 75%;
+        padding: 160px 80px;
     }
 
-    .slideshow-item-text-2 h5{
-        font-size: 4rem;
+    .about-us-item-text-2 h5{
+        font-size: 40px;
+    }
+
+    .about-us-item-text-2 p{
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        font-size: 30px;
     }
 }
 
-
-@media screen and (max-width: 767px){
-    .slideshow-item-text-2{
+@media screen and (max-width: 800px){
+    .about-us-item-text-2{
         max-width: 100%;
-        padding: 2rem;
+        padding: 32px;
         top: initial;
         bottom: 18px;
         transform: initial;
     }
 
-    .slideshow-item-text-2 h5{
-        font-size: 23px;
+    .about-us-item-text-2 h5{
+        font-size: 30px;
     }
 
-    .slideshow-item-text-2 p{
+    .about-us-item-text-2 p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-us-item-text-2 h5{
+        font-size: 20px;
+    }
+
+    .about-us-item-text-2 p{
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .about-us-item-text-2 h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text-2 p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .about-us-item-text-2 h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text-2 p{
+        font-size: 13px;
     }
 }
 
@@ -765,6 +891,37 @@
     margin: auto;
 }
 
+@media screen and (max-width:1200px){
+    .link-text{
+       font-size: 30px;     
+    }
+}
+
+@media screen and (max-width:800px){
+    .link-text{
+       font-size: 25px;     
+    }
+}
+
+@media screen and (max-width:500px){
+    .link-text{
+       font-size: 20px;     
+    }
+}
+
+@media screen and (max-width:400px){
+    .link-text{
+       font-size: 18px;     
+    }
+}
+
+@media screen and (max-width:300px){
+    .link-text{
+       font-size: 14px;     
+    }
+}
+
+
 /*================= FIN SECCIÓN VIDEO =================*/
 
                     /*================= FIN QUIENES SOMOS =================*/
@@ -793,10 +950,10 @@ footer{
 }
 
 .footer-content h3{
-    font-size: 1.8rem;
+    font-size: 29px;
     font-weight: 400;
     text-transform: capitalize;
-    line-height: 3rem;
+    line-height: 48px;
 }
 
 .footer-content p{
@@ -824,8 +981,36 @@ footer{
 }
 
 .socials a i{
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
+@media screen and (max-width:1200px){
+    .footer-content p{
+        font-size: 20px;
+    }
+}
 
+@media screen and (max-width:800px){
+    .footer-content p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .footer-content p{
+        font-size: 15px;
+    }
+    .footer-content h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .footer-content p{
+        font-size: 13px;
+    }
+    .footer-content h3{
+        font-size: 18px;
+    }
+}
                     /*================= FIN FOOTER =================*/
