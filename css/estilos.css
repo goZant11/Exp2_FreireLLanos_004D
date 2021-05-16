@@ -1133,3 +1133,113 @@ footer{
 } 
 
 /* FIN REGISTRO USUARIO */
+
+/* INICIO REGISTRO ZAPATILLA */
+
+.imagen-fondo-2{
+    background: url(../img/aportes.jfif)fixed center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-aporte{
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.form-aporte h4{
+    font-size: 25px;
+}
+
+.form-aporte p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-aporte hr{
+    margin-bottom: 15px;
+    
+}
+
+.form-aporte hr{
+    border: 0.1px solid;
+}
+
+.input-aporte{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -3px;
+}
+
+.input-aporte:focus{
+    outline: none;
+}
+
+.form-opciones{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-top: -3px;
+}
+
+.calendario{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -3px;   
+}
+
+.form-file{
+    width: 740px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.form-botones-aporte{
+    width: 80%;
+    background: #d66c0a;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin: 20px 0;
+    margin-left: 72px;
+    margin-top: 30px;
+    font-size: 16px;
+    border-radius: 4px;
+}   
+
+.form-botones-aporte:hover{
+    background: #ff7d04;
+} 
+
+
+.form-parrafo-aporte{
+    text-align: center;
+}   
+
+.form-parrafo-aporte a{
+    color: #fff;
+    text-decoration: none;
+}
+
