@@ -1132,6 +1132,46 @@ footer{
     background: #ff7d04;
 } 
 
+/* Registro exitoso */
+
+.imagen-registro-exitoso{
+    background: url(../img/registro.jpg)fixed center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-registro-exitoso{
+    width: 800px;
+    padding-top: 250px;
+    margin: auto;
+    margin-top: 50px;
+    color: #fff;
+    
+}
+
+.form-registro-exitoso h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-registro-exitoso p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-registro-exitoso a{
+    color: #fff;
+    text-decoration: none;
+}
+
 /* FIN REGISTRO USUARIO */
 
 /* INICIO REGISTRO ZAPATILLA */
@@ -1243,6 +1283,46 @@ footer{
     text-decoration: none;
 }
 
+/* aporte enviado con exito */
+
+.imagen-aporte-exitoso{
+    background: url(../img/aportes.jfif)fixed center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-aporte-exitoso{
+    width: 800px;
+    padding-top: 260px;
+    margin: auto;
+    margin-top: 50px;
+    color: #fff;
+    
+}
+
+.form-aporte-exitoso h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-aporte-exitoso p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-aporte-exitoso a{
+    color: #fff;
+    text-decoration: none;
+}
+
 @media screen and (max-width:1200px){
     .form-registro{
         width: 800px;     
@@ -1285,6 +1365,34 @@ footer{
     .form-botones{
         padding: 15px;
         font-size: 27px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 800px;     
+    }
+
+    .form-registro-exitoso h4{
+        font-size: 40px;
+    }
+
+    .form-registro-exitoso p{
+        font-size: 30px;
+    }
+
+    /* aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 800px;     
+    }
+
+    .form-aporte-exitoso h4{
+        font-size: 40px;
+    }
+
+    .form-aporte-exitoso p{
+        font-size: 30px;
     }
 
     /* Responsividad aportes */
@@ -1337,6 +1445,19 @@ footer{
     }
     .form-check-input{
         block-size: 40px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 700px;  
+        padding-top: 150px;   
+    }
+
+    /* aporte exitoso */
+    .form-aporte-exitoso{
+        width: 700px;  
+        padding-top: 200px;   
     }
 
     /* Responsividad aportes */
@@ -1433,6 +1554,28 @@ footer{
         font-size: 15px;
     }
 
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 450px;
+        padding-top: 200px;     
+    }
+
+    .form-registro-exitoso h4{
+        font-size: 25px;
+    }
+
+    .form-registro-exitoso p{
+        font-size: 20px;
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 450px;
+        padding-top: 200px;     
+    }
+
     .form-aporte-exitoso h4{
         font-size: 25px;
     }
@@ -1509,6 +1652,18 @@ footer{
         font-size: 15px;
     }
 
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 350px;     
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 350px;     
+    }
+
     /* Responsividad aportes */
 
     .imagen-fondo-2{
@@ -1569,6 +1724,18 @@ footer{
     }
     .input-container {
         margin-bottom: 7px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 300px;     
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 300px;     
     }
 
     /* Responsividad aportes */
@@ -1651,6 +1818,28 @@ footer{
 
     .form-registro p{
         font-size: 12px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 250px;  
+        margin-top: 50px;   
+    }
+
+    .form-registro-exitoso h4{
+        font-size: 20px;
+    }
+
+    .form-registro-exitoso p{
+        font-size: 15px;
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 250px;  
+        margin-top: 50px;   
     }
 
     .form-aporte-exitoso h4{
