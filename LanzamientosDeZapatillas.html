@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Zapatillas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
-  <link href="css/estilos.css" type="text/css" rel="stylesheet"> 
-  <link rel="shortcut icon" href="img/logobueno.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LanzamientosChile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
+    <link href="css/estilos.css" type="text/css" rel="stylesheet"> 
+    <link rel="shortcut icon" href="img/logobueno.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#solicitar").click(function(){
+                $.get("https://mindicador.cl/api",
+                    function(data){
+                        $("#monedas").append("<tr><td>"+data.dolar.nombre+"</td><td>"+data.dolar.valor+"</td><td>"+data.dolar.fecha+"</td><td>");
+                });
+            });
+        })
+    </script>
 </head>
 <body>
 
@@ -28,7 +40,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item active"><a class="nav-link" href="LanzamientosDeZapatillas.html">Lanzamientos</a></li>
                     <li class="nav-item"><a class="nav-link" href="AboutUs.html">Quiénes Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Sesion.html">Registrarse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aportes.html">Aportes</a></li>
                 </ul>
             </div>
         </div>       
@@ -50,7 +63,6 @@
 
     <div class="galeria">
         <h1 class="text-center titulo">ÚLTIMOS LANZAMIENTOS</h1>
-        <div class="linea"></div>
         <div class="contenedor-imagenes">
             <div class="imagen">
                 <img src="img/NIKEDUNK.jpg" alt="">
@@ -97,7 +109,23 @@
             </div>
         </div>
     </div> 
+    <br><br>
+    <div id="botonDolar">
+        <button type="button" class="btn btn-info" id="solicitar">Ver valor del Dolar en CLP</button>
+    </div>
     <br>
+    <table class="table" id="monedas">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
 
     <!-- Footer -->
     <footer>
@@ -113,7 +141,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
